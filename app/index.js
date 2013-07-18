@@ -36,9 +36,20 @@ BlogGenerator.prototype.askFor = function askFor() {
 
 BlogGenerator.prototype.app = function app() {
   this.mkdir('posts');
+  this.template('_index.md', 'posts/index.md');
+  
+  this.template('Gruntfile.js', 'Gruntfile.js');
+  this.template('index.html', 'index.html');
 
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  this.template('_bower.json', 'bower.json');
+  this.template('_config.json', 'config.json');
+  this.template('_package.json', 'package.json');
+  this.copy('wordmap.json', 'wordmap.json');
+};
+
+BlogGenerator.prototype.runtime = function runtime() {
+  this.copy('bowerrc', '.bowerrc');
+  this.copy('gitignore', '.gitignore');
 };
 
 BlogGenerator.prototype.projectfiles = function projectfiles() {
