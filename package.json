@@ -1,0 +1,37 @@
+{
+  "name": "generator-blog",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/victorkane/generator-blog",
+  "bugs": "https://github.com/victorkane/generator-blog/issues",
+  "author": {
+    "name": "Victor Kane",
+    "email": "",
+    "url": "https://github.com/victorkane"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/victorkane/generator-blog.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.12.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
